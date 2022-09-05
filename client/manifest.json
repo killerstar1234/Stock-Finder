@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Stock Fisher",
+    "version": "1.0.0",    
+    "description": "Search, Find, Monitor Stocks!",
+    "icons": { "128": "stock.png"},
+    "content_scripts": [
+        {
+            "defult_icon": "stock.png",
+            "matches": ["<all_urls>"],
+            "js": ["index.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Stock Fisher"
+    }
+}
